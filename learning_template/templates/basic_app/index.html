@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{%extends 'basic_app/base.html'%}
+{%load my_extras%}
+  {%block body_block%}
+  <h1>Welcome to index page!</h1>
+  <p>{{ text | s_c:'l' }}</p>
+  <p>{{ text | l_n }}</p>
+  <p>{{ number | add:'10' }}</p>
+  {%endblock%}
